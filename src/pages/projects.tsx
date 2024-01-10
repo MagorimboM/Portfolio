@@ -88,7 +88,7 @@ function Projects() {
                                 <div className="card-actions justify-end">
                                     <a href={project.link}><button className="btn btn-primary">View App</button></a>
                                 </div>
-                                s</div>
+                                </div>
                         </div>
                     </div>
                 ))}
