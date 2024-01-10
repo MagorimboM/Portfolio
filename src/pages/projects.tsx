@@ -4,20 +4,6 @@ import cover from '../pictures/webStore.jpeg';
 import DashBoard from '../pictures/DashBoardApp.png';
 import LoginApp from '../pictures/LoginApp.png';
 import { Footer } from '../components/Footer';
-import { FaCss3, FaHtml5 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { DiMongodb } from "react-icons/di";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiNextdotjs } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { SiVercel } from "react-icons/si";
-import { RiSupabaseFill } from "react-icons/ri";
-import { SiChartdotjs } from "react-icons/si";
-import { IoIosArrowForward } from "react-icons/io";
 
 function Projects() {
 
@@ -93,8 +79,8 @@ function Projects() {
             <div className='w-full'><NavBar /></div>
             <div className="carousel m-20 h-full w-full">
                 {projects.map((project:any)=>(
-                <div id={project.id} className="carousel-item border-b-1 border-b-yellow-400 w-full">
-                        <div className="card lg:card-side shadow-xl">
+                    <div id={project.id} className="carousel-item w-full">
+                        <div className="card lg:card-side flex justify-between shadow-xl">
                             <figure><img className=' ml-20 border rounded-lg hidden h-[30vh] w-[70vh] xl:block' src={project.image} alt="Album" /></figure>
                             <div className="card-body scroll overflow-scroll flex flex-col justify-center items-center justify-between">
                                 <h2 className="card-title">{project.title}</h2>
@@ -102,23 +88,16 @@ function Projects() {
                                 <div className="card-actions justify-end">
                                     <a href={project.link}><button className="btn btn-primary">View App</button></a>
                                 </div>
-                            </div>
-                            
+                                s</div>
                         </div>
-                        
-                </div>
+                    </div>
                 ))}
-                
             </div>
             <div className="flex justify-center w-full py-2 gap-2">
                 <a href="#item1" className="cursor-pointer transition hover:scale-125 duration-300 ease-in-out hover hover:bg-yellow-400 btn btn-sm">1</a>
                 <a href="#item2" className="cursor-pointer transition hover:scale-125 duration-300 ease-in-out hover hover:bg-yellow-400 btn btn-sm">2</a>
                 <a href="#item3" className="cursor-pointer transition hover:scale-125 duration-300 ease-in-out hover hover:bg-yellow-400 btn btn-sm">3</a>
             </div>
-
-
-
-    
             <div id='footer'><Footer /></div>
         </main>
     );
